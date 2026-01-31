@@ -54,7 +54,7 @@
             setTimeout(() => {
                 let countdown = 5;
                 const countdownInterval = setInterval(() => {
-                    outputDiv.innerHTML += `Remaining time: ${countdown} second${countdown !== 1 ? 's' : ''}...\n`;
+                    outputDiv.textContent += `Remaining time: ${countdown} second${countdown !== 1 ? 's' : ''}...\n`;
                     countdown--;
 
                     if (countdown < 0) {
@@ -66,22 +66,22 @@
 
             function startSequence() {
                 setTimeout(() => {
-                    outputDiv.innerHTML += "Scanning system data...\n";
+                    outputDiv.textContent += "Scanning system data...\n";
 
                     setTimeout(() => {
-                        outputDiv.innerHTML += "Analysing software...\n";
+                        outputDiv.textContent += "Analysing software...\n";
 
                         setTimeout(() => {
-                            outputDiv.innerHTML += "Deleting software...\n";
+                            outputDiv.textContent += "Deleting software...\n";
 
                             setTimeout(() => {
-                                outputDiv.innerHTML += "Error occurred...\n";
+                                outputDiv.textContent += "Error occurred...\n";
 
                                 setTimeout(() => {
-                                    outputDiv.innerHTML += "System breached... Malware detected...\n";
+                                    outputDiv.textContent += "System breached... Malware detected...\n";
 
                                     setTimeout(() => {
-                                        outputDiv.innerHTML += "System failed. (Just Kidding!)\n";
+                                        outputDiv.textContent += "System failed. (Just Kidding!)\n";
                                     }, 2000);
 
                                 }, 2000);
